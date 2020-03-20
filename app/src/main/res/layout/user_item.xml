@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/item_avatar"
+            android:layout_width="128sp"
+            android:layout_height="128sp"
+            android:layout_marginStart="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Hello world"
+                tools:text="User name" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_link"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/item_avatar"-->
+<!--            tools:layout_editor_absoluteX="@dimen/default_margin"-->
+<!--            tools:text="this is user link this is user link this is user link" />-->
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
